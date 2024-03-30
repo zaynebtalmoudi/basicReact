@@ -59,16 +59,7 @@ function App() {
           </Card.Body>
         </Card>
         {/* card 4 */}
-        <Card className = "mt-5 bg-body-tertiary" style={{ width: '16rem' }} >
-          <Card.Img variant="top" src="./javaProg.png" />
-          <Card.Body>
-            <Card.Title>Node Course</Card.Title>
-            <Card.Text className= "text-body-secondary">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
-          </Card.Body>
-        </Card> 
+        
 
         
       </Container>
