@@ -3,13 +3,14 @@
 import { Navbar,Nav, Card, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap/dist/react-bootstrap';
+import Star from './Star';
 
 function App() {
   return (
     <div className="App">
      
         
-       <Navbar bg="info" data-bs-theme="light">
+       <Navbar bg="dark" data-bs-theme="dark">
         <Container >
           <Navbar.Brand href="#home">ReactApp</Navbar.Brand>
           <Nav className="ms-auto">
@@ -24,14 +25,18 @@ function App() {
       <Container className = 'd-flex justify-content-around'>
 
         {/* card 1 */}
-        <Card className = "mt-5 bglight.bg-body-tertiary" style={{ width: '16rem' }} >
-          <Card.Img variant="top" src="./jsProg.png"style={{ minHeight: "16rem"}} />
+        <Card className = "mt-5 bglight.bg-body-tertiary" style={{ width: '16rem'}}>
+          <Card.Img  className = "hover-zoom " variant="top" src="./jsProg.png"style={{ minHeight: "16rem"}}  />
           <Card.Body>
             <Card.Title>JavaScript Course </Card.Title>
             <Card.Text className= "text-body-secondary">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              JavaScript is the programming language of the Web.
+              JavaScript is easy to learn. This course will teach you JavaScript from basic to advanced.
             </Card.Text>
+            <div>
+               <Star/><Star/><Star/><Star/> <span style={{fontSize:'14px'}}> (102 reviews)</span>
+            </div>
+           
           </Card.Body>
         </Card> 
 
@@ -41,9 +46,14 @@ function App() {
           <Card.Body>
             <Card.Title>Python Course</Card.Title>
             <Card.Text className= "text-body-secondary">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Java is a powerful general-purpose programming language. 
+              This Java course will guide you to learn Java one step at 
+              a time with the help of examples.
             </Card.Text>
+              <div>
+               <Star/><Star/><Star/><Star/><Star/> <span style={{fontSize:'14px'}}> (370 reviews)</span>
+            </div>
+            
           </Card.Body>
         </Card> 
 
@@ -53,9 +63,12 @@ function App() {
           <Card.Body>
             <Card.Title>Java Course</Card.Title>
             <Card.Text className= "text-body-secondary">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+              Master Python with our course from basics to advanced programming. 
+              Learn through hands-on projects with expert instructors.
             </Card.Text>
+            <div>
+               <Star/><Star/><Star/> <span style={{fontSize:'14px'}}> (81 reviews)</span>
+            </div>
           </Card.Body>
         </Card>
         {/* card 4 */}
